@@ -14,7 +14,8 @@ ENV PASSWORD 123456
 ENV TIMEOUT 300
 ENV WORKERS 4
 
-EXPOSE $SERVER_PORT/tcp
+//arukas.io
+#EXPOSE $SERVER_PORT/tcp
 
 CMD ssserver -s "$SERVER_ADDR"		\
              -p "$SERVER_PORT"		\
