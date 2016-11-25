@@ -11,9 +11,9 @@ RUN apk add --no-cache libsodium wget supervisor openssh\
 
 RUN pip --no-cache-dir install https://github.com/breakwa11/shadowsocks/archive/manyuser.zip
 RUN cd /root \
-    && wget https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-amd64-$KCP_VER.tar.gz -O kcptun.tar.gz \
-	&& tar xz kcptun.tar.gz \
-    && rm client_linux_amd64
+    && wget https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-amd64-$KCP_VER.tar.gz \
+	&& tar xz kcptun-linux-amd64-$KCP_VER.tar.gz \
+    && rm client_linux_amd64 kcptun-linux-amd64-$KCP_VER.tar.gz
 
 ADD supervisord.conf /etc/supervisord.conf
 ADD kcptun.json /root/kcptun.json
