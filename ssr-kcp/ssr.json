@@ -7,7 +7,7 @@
     "password": "Aofa.Lau1983",
     "timeout": 120,
     "udp_timeout": 60,
-    "method": "aes-256-cfb",
+    "method": "chacha20",
     "protocol": "auth_sha1_v4_compatible",
     "protocol_param": "",
     "obfs": "tls1.2_ticket_auth_compatible",

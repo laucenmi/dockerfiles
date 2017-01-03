@@ -3,5 +3,5 @@
     "target": "127.0.0.1:443",
     "key": "SsS",
     "crypt": "salsa20",
-    "mode": "fast"
+    "mode": "normal"
 }
